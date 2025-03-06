@@ -4,13 +4,9 @@
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif !important;
 }
-
 body {
     background-color: #ffffff;
 }
-
-
-
 .logo img {
     width: 200px;
 }
@@ -20,7 +16,6 @@ body {
     align-items: center;
     gap: 15px;
 }
-
 .search-btn {
     font-family: 'Outfit', sans-serif !important;
     background: #FFC000;
@@ -37,10 +32,8 @@ body {
 .book-btn:hover {
     background-color: #f9c62b;
 }
-
 .call-btn {
     font-family: 'Outfit', sans-serif !important;
-
     background: #04634D;
     color: white;
     border: none;
@@ -54,7 +47,6 @@ body {
     background-color: #048b6c;
 }
 
-/* img-top-div Section */
 .img-top-div {
     background: url('/bootstrap/images/back-img-green.webp') center/cover no-repeat;
     color: white;
@@ -69,7 +61,6 @@ body {
     padding: 180px 20px;
     position: relative;
 }
-
 .img-top-div::before {
     opacity: .6;
     content: "";
@@ -88,8 +79,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-
 .img-top-div-content {
     position: relative;
     z-index: 1;
@@ -98,16 +87,8 @@ body {
     position: relative;
     z-index: 1;
 }
-
-
-
-
-
-
 .book-btn {
     font-family: 'Outfit', sans-serif !important;
-
-
     background: #FFC000;
     border: none;
     padding: 12px 20px;
@@ -118,10 +99,9 @@ body {
     border-radius: 6px;
 }
 
-/* Services Section (ABSOLUTE POSITIONING) */
 .services {
     position: absolute;
-    bottom: -70px; /* Move cards over img-top-div section */
+    bottom: -70px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -199,7 +179,6 @@ body {
     gap: 40px;
 }
 
-/* Left Side: Content */
 .service-content {
     flex: 1;
 }
@@ -247,7 +226,6 @@ body {
     width: 15px;
 }
 
-/* Buttons */
 .service-buttons {
     display: flex;
     gap: 15px;
@@ -288,14 +266,12 @@ body {
 }
 
 
-/* Right Side: Image */
 .service-image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 900px) {
     .service-section {
         flex-direction: column;
@@ -311,7 +287,6 @@ body {
     }
     
 }
-/* Responsive Design */
 @media (max-width: 768px) {
     .img-top-div p {
         font-family: 'Outfit', sans-serif !important;
@@ -528,9 +503,6 @@ body {
     }
 
 }
-
-
-
 .booking-container {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -540,8 +512,6 @@ body {
     background: white;
     padding: 20px;
 }
-
-/* Header */
 .booking-header {
     background: #DEF7F1;
     font-size: 16px;
@@ -554,19 +524,14 @@ body {
     text-align: center;
     width: 80%;
     padding: 10px 15px;
-
-
     color: black;
 }
 .booking-header label{
     width: 20%;
-
     padding: 10px 15px;
-
     color: white;
     background: #04634D;
 }
-/* Car Selection */
 .car-selection {
     justify-content: space-between;
     display: flex;
@@ -581,8 +546,7 @@ body {
     background-color: #9AE8D654;
 }
 .car-card{
-    display: flex
-;
+    display: flex;
     border: 1px solid #04634D;
     border-radius: 10px;
     text-align: center;
@@ -596,7 +560,7 @@ body {
     background-color: #04634D;
 }
 .car-card input[type="checkbox"] {
-    display: none; /* Hide default checkbox */
+    display: none; 
 }
 .car-card input[type="checkbox"]:checked + .car-div {
     border-radius: 0px 0px 10px 10px;
@@ -605,7 +569,6 @@ body {
     background-color: #04634D ;
 }
 .car-card-body {
-    
     padding: 10px;
     min-width: 150px;
 }
@@ -626,7 +589,6 @@ body {
     font-size: 20px;
 }
 
-/* Form */
 .booking-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -657,13 +619,10 @@ body {
     background-color: #9AE8D654;
 }
 
-
-/* Full Width Inputs */
 .form-group.full-width {
     grid-column: span 2;
 }
 
-/* Submit Button */
 .submit-btn {
     background: #FFC000;
     color: black;
@@ -676,7 +635,6 @@ body {
     cursor: pointer;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .booking-form {
         grid-template-columns: 1fr;
