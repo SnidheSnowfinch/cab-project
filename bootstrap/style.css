@@ -199,6 +199,11 @@ margin: 0;
     background: #ffcf3e;
 
 }
+label.mandatory:after {
+    content: " *";  
+    color: red;      
+    font-weight: bold;
+}
 
 
 
@@ -213,16 +218,53 @@ margin: 0;
     
 }
 @media (max-width: 767px) {
-    .booking-header {
-        font-size: 14px !important;}
-    .booking-header span {
+    .nav-btn-center{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .submit-btn {
+        width: 100% !important;
+       
+    }
+    .car-card {
+        margin-bottom: 15px !important;
+        display: flex
+    ;
+        border: 1px solid #04634D;
+        border-radius: 10px;
         text-align: center;
-        width: 55%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .car-card-body img {
+        width: 180px !important;
+        height: auto;
+    }
+    .car-selection { scrollbar-width: none;
+        justify-content: space-between;
+        
+        gap: 10px;
+       
+        padding: 10px 0 20px 0;
+        white-space: nowrap;
+    }
+    .booking-header {
+        background: #DEF7F1;
+        font-size: 14px;
+        font-weight: 500;
+        align-items: center;
+    }
+  
+    .booking-header span {
+        display: flex;
+        text-align: left;
+        width: 100%;
         padding: 10px 15px;
         color: black;
     }
     .booking-header label{
-        width: 45%;
+        width: 100%;
         padding: 10px 15px;
         color: white;
         background: #04634D;
@@ -381,8 +423,43 @@ margin: 0;
         background-color: #04634D;
         padding: 15px 0px;
     }
+    .toggle-span{
+        width: 100%;
+        display: flex
+    ;
+        justify-content: space-between;
+    
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    .toggle-span{
+        width: 100%;
+        display: flex
+    ;
+        justify-content: space-between;
+    
+    }
+    .nav-btn-center{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .car-selection {
+        scrollbar-width: none;
+        justify-content: space-between;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 10px 0 20px 0;
+        white-space: nowrap;
+    }
+    .booking-header {
+        background: #DEF7F1;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
     .booking-header span {
         text-align: center;
         width: 80%;
@@ -418,11 +495,7 @@ margin: 0;
         justify-content: center;
     }
    
-    .toggle-span{
-        display: flex
-        ;
-            flex-direction: row-reverse;
-    }
+   
     .footer-bottom{
         margin-top: 80px;
         background-color: #04634D;
@@ -523,6 +596,23 @@ margin: 0;
 
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
+    
+    .car-selection {
+        scrollbar-width: none;
+        justify-content: space-between;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 10px 0 20px 0;
+        white-space: nowrap;
+    }
+    .booking-header {
+        background: #DEF7F1;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
     .booking-header span {
         text-align: center;
         width: 80%;
@@ -656,9 +746,7 @@ margin: 0;
         position: relative;
         height: 310px;
     }
-    .booking-header {
-        font-size: 14px !important;
-    }
+   
     .navbar{
         justify-content: space-between;
 
@@ -738,6 +826,22 @@ margin: 0;
     }
 }
 @media (min-width: 1441px) and (max-width: 1920px) {
+    .car-selection {
+        scrollbar-width: none;
+        justify-content: space-between;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 10px 0 20px 0;
+        white-space: nowrap;
+    }
+    .booking-header {
+        background: #DEF7F1;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
     .booking-header span {
         text-align: center;
         width: 80%;
@@ -877,6 +981,22 @@ margin: 0;
 }
 
 @media (min-width: 1921px) {
+    .car-selection {
+        scrollbar-width: none;
+        justify-content: space-between;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 10px 0 20px 0;
+        white-space: nowrap;
+    }
+    .booking-header {
+        background: #DEF7F1;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
     .booking-header span {
         text-align: center;
         width: 80%;
@@ -1024,24 +1144,10 @@ margin: 0;
     background: white;
     padding: 20px;
 }
-.booking-header {
-    background: #DEF7F1;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-}
 
 
-.car-selection {
-    scrollbar-width: none;
-    justify-content: space-between;
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    padding: 10px 0 20px 0;
-    white-space: nowrap;
-}
+
+
 .car-div{
     color: #000000;
     padding: 5px;
